@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="row p-4">
+            <figure class="col-12">
+                <a href="home.html">
+                    <h1>Softgun <img src="img/MicrosoftTeams-image (7).png" alt="Logo" id="logo"> Zonen</h1>
+                </a>
+            </figure>
+        </header>
+    
+
+    <main class="row p-4">
+        <nav class="col-12 navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- burger menuen ved mindre skærme/collapse  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menuen inden collapse  -->
+                <div class="collapse navbar-collapse" id="navbarSupportContent">
+                    <ul class="navbar-nav me-auto mn-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Hjem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Produkter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Butikken</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Kontakt os</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search" id="search-form">
+                        <input type="search" class="form-control me-2" placeholder="søg" aria-label="search">
+
+                        <button class="px-3" type="submit">search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <article class="main_content mt-4">
+            <h2 class="fw-normal ps-5 pe-5 pt-5"><i>Velkommen til SoftgunZone.dk</i></h2>
+            <p class="ps-5 pe-5">Her på siden finder du vores store udvalg af softguns og tilbehør. Vi har softguns og hardball våben fra ASG, G&G, UMAREX, Cybergyn, A&K, Marui, Cyma og Classic Army. Stort udvalg i softgun og hardball kugler, tilbehør og beklædning.</p>
+            <h6 class="text-danger ps-5 pe-5">Bemærk !</h6><p class="ps-5 pe-5">Du skal være mindst 18 år for at købe softguns i henhold til våbenloven. Husk også maske eller briller til beskyttelse af øjnene da softgun kugler kan give alvorlige øjenskader. Vi sælger ikke vores produkter over nettet, men du kan her på siden skabe dig et overblik over hvad du kan finde i vores butik. </p>
+
+            <article class="row">
+                <section class="col-12 col-lg-4">
+                    <figure class="text-center w-75">
+                        <figcaption id="main_img">
+                            <p class="text-white pt-1 pb-3">ASG MTI M1911 Classic</p>
+                            <img class="w-50" src="img/STIM1911C.jpg" alt="billede af ASG GUN">
+                            <p class="text-white pb-2 pt-3">Pris: 123,00 kr.</p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="col-12 col-lg-4">
+                    <figure class="text-center w-75">
+                        <figcaption id="main_img">
+                            <p class="text-white pt-1 pb-1">Aftermath Hitman CQC</p>
+                            <img class="w-50 py-4 px-2" src="img/aftermatchCQC.jpg" alt="billede af aftermath CQC">
+                            <p class="text-white pb-2 pt-3">Pris: 2999,95 kr.</p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="col-12 col-lg-4">
+                    <figure class="text-center w-75">
+                        <figcaption id="main_img">
+                            <p class="text-white pb-4">ASG Ruger MK i cara...</p>
+                            <img class="w-50" src="img/AEGPDW.jpg" alt="Billede af AEG">
+                            <p class="text-white pb-2 pt-4">Pris 1499,00 kr.</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </article>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>SoftgunZone, Østre Allé 247, DK-900 Aalborg C, +45 234 543</p>
+    </footer>
+    </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Forhindrer standard formularindsendelse
+    
+            var searchInput = document.querySelector("#search-form input[type=search]");
+            var searchTerm = searchInput.value.trim().toLowerCase();
+    
+            // Tjekker om søgeordet er "umarex"
+            if (searchTerm === "umarex") {
+                window.location.href = "umarex.html"; // Omdirigerer til den ønskede side
+            } else {
+                // Handle andre søgeord eller giv en meddelelse om, at søgeordet ikke blev fundet.
+                alert("Søgeordet blev ikke fundet!");
+            }
+        });
+    </script>
+    
+</body>
+</html>

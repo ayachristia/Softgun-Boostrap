@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="row p-4">
+            <figure class="col-12">
+                <a href="home.html">
+                    <h1>Softgun <img src="img/MicrosoftTeams-image (7).png" alt="Logo" id="logo"> Zonen</h1>
+                </a>
+            </figure>
+        </header>
+    
+
+    <main class="row p-4">
+        <nav class="col-12 navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- burger menuen ved mindre skærme/collapse  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menuen inden collapse  -->
+                <div class="collapse navbar-collapse" id="navbarSupportContent">
+                    <ul class="navbar-nav me-auto mn-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Hjem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Produkter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Butikken</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Kontakt os</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search" id="search-form">
+                        <input type="search" class="form-control me-2" placeholder="søg" aria-label="search">
+
+                        <button class="px-3" type="submit">search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <article class="main_content mt-4">
+            
+            <article class="row">
+                <section class="col-2 col-lg-1"></section>
+                <section class="col-7 col-lg-5 pt-3">
+                    <h2 class="fw-normal"><i>Kontant os</i></h2>
+                </section>
+            </article>
+
+            <article class="row">
+                <section class="col-2 col-lg-1"></section>
+                <section class="col-10 col-lg-4">
+                    <p id="paragraph"><b>Zoftgun Zone</b></p>
+                    <p id="paragraph">Østre Alle 247</p>
+                    <p id="paragraph">DK-9000 Ålborg C</p>
+                    <p style="margin: 1;"></p>
+                    <p id="paragraph">Tlf: +45 234 543</p>
+                    <p id="paragraph">Fax: +45 234 544</p>
+                    <p style="margin: 1;"></p>
+                    <p id="paragraph">info@softgunzone.dk</p>
+                    <figure class="mt-3">
+                        <a href="https://goo.gl/maps/ZWDiVz3LkY511JcE6"><img src="img/Kort.jpg" alt="billede af kort" class="img-fluid w-100 h-100" id="img_location"></a>
+                    </figure>
+                </section>
+
+
+                <section class="col-10 col-lg-7 ps-4">
+                    <form action="action_page.php" id="send_besked" class="form-container">
+                        <p class="ps-5"><b>Send os en mail:</b></p>
+                        <section class="ps-5 pt-3">
+                            <label class="pe-5" for="fname">Navn:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Dit navn her.." style="width:20em">
+                        </section>
+                        <br>
+                        <section class="ps-5">
+                            <label class="pe-3" for="tlf">Telefon nr:</label>
+                            <input type="text" id="tlf" placeholder="Dit telefon nummer her.." style="width:20em">
+                        </section>
+                        <br>
+                        <section class="ps-5">
+                            <label class="pe-5" for="emne">Emne</label>
+                            <input type="text" id="emne1" placeholder="Dit emne her.." style="width:30em">
+                        </section>
+                        <br>
+                        <section class="ps-5 pb-2">
+                            <label for="emne2">Eventuelle bemærkninger:</label>
+                            <br>
+                            <textarea class="mt-1" name="emnet" id="emne2" rows="5" placeholder="Eventuelle bemærkninger, allergigener, fødselsdags ønsker, ris og ros .." style="width:36em"></textarea>
+                            <br>
+                            <input class="text-danger fw-bold mt-2 mb-1" type="submit" value="Send">
+                        </section>
+                    </form>
+                </section>
+                
+
+                
+            </article>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>SoftgunZone, Østre Allé 247, DK-900 Aalborg C, +45 234 543</p>
+    </footer>
+    </div>
+    <script src="search.js"></script>
+    
+</body>
+</html>

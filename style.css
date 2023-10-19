@@ -1,0 +1,176 @@
+
+/* LAYOUT ----------------------- */
+body {
+    background-color: black;
+}
+
+header h1 {
+    font-weight: bold;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline red;
+}
+
+#logo {
+    width: 5%;
+}
+
+nav {
+    background-color: rgb(9, 8, 8);
+    border-radius: 8px;
+}
+
+nav form button {
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    border-color: white;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.main_content {
+    min-height: 500px;
+    background: rgb(237, 228, 228);
+    border-radius: 8px;
+}
+
+footer {
+    text-align: right;
+    color: white;
+}
+
+/* HOME ---------------------- */
+
+#main_img {
+    background-color: black;
+    border-radius: 11px;
+    margin-left: 17%;
+}
+
+
+/* PRODUCTS --------------------- */
+
+#product_gallery {
+    background-color: black;
+    border-radius: 11px;
+}
+
+/* GUNS --------------------- */
+
+#sold_out {
+    background-color: red;
+    border-radius: 50%;
+    padding: 12px;
+    border: none;
+    box-shadow: 1px 1px grey;
+}
+
+#in_stock {
+    background-color: green;
+    border-radius: 50%;
+    padding: 12px;
+    border: none;
+    box-shadow: 1px 1px grey;
+}
+
+#show_product {
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 1px 1px grey;
+}
+
+#show_product a:hover {
+    color: rgb(248, 223, 223);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#back_to_products {
+    text-decoration: underline;
+}
+
+/* PRODUCT SPECIFICATIONS ---------------------- */
+
+#product_specification_design {
+    border: 20px solid black;
+    border-radius: 2%;
+}
+
+/* UMAREXHKP30-------------------- */
+
+#paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* CONTACT -------------------------- */
+
+#img_location {
+    border: 15px solid black;
+    border-radius: 2%;
+}
+
+/* BUTIKKEN --------------------- */
+
+#img_butik {
+    border: 20px solid black;
+    border-radius: 2%;
+}
+
+th {
+    padding-right: 20px;
+}
+/* MEDIA QUERIES ------------------------ */
+
+/* Generelle formateringsregler for form-container */
+.form-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Når skærmbredden er mindre end 768px (mobil) */
+@media screen and (max-width: 767px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container > section {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%;
+        max-width: 100%; /* Tilføj denne linje */
+    }
+}
